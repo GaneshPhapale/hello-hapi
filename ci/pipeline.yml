@@ -5,6 +5,12 @@ resource_type:
     source:
       repository: ymedlop/npm-cache-resource
       tags: latest
+    run:
+      path: sh
+      args:
+      - -cx
+      - |
+        git config --global http.sslVerify false
 
 resources:
   - name: hello_hapi
