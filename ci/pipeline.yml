@@ -12,7 +12,6 @@ resources:
     source: &repo-source
       uri: git@github.com:GaneshPhapale/hello-hapi.git
       branch: master
-      private_key: ((private-repo-key))
   - name: dependency-cache
     type: npm-cache
     source:
